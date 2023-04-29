@@ -1,12 +1,9 @@
 import { MainLayout } from '@/components/layout'
 import { NextPageWithLayout } from '@/models'
+import { Box } from '@mui/material'
 
 const Home: NextPageWithLayout = () => {
-  return (
-    <>
-      <h1>welcome</h1>
-    </>
-  )
+  return <Box>Home Page</Box>
 }
 Home.Layout = MainLayout
 
