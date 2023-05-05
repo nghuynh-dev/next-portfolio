@@ -1,5 +1,5 @@
 import { red } from '@mui/material/colors'
-import { createTheme } from '@mui/material/styles'
+import { createTheme, responsiveFontSizes } from '@mui/material/styles'
 import { Heebo } from 'next/font/google'
 
 export const heebo = Heebo({
@@ -8,7 +8,7 @@ export const heebo = Heebo({
 })
 
 // Create a theme instance.
-const theme = createTheme({
+export let theme = createTheme({
   palette: {
     primary: {
       main: '#FF6464',
@@ -70,5 +70,13 @@ const theme = createTheme({
     },
   },
 })
+
+theme = responsiveFontSizes(theme);
+// theme.typography.h3 = {
+//   fontSize: '2rem',
+//   [theme.breakpoints.up('md')]: {
+//     fontSize: '3rem'
+//   }
+// }
 
 export default theme

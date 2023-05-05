@@ -6,7 +6,6 @@ import { ROUTE_LIST } from './routes'
 
 export default function HeaderDesktop() {
   const router = useRouter()
-  console.log(router)
 
   return (
     <Box display={{ xs: 'none', md: 'block' }} py={2}>
