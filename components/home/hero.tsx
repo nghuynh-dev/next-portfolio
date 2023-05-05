@@ -12,7 +12,7 @@ export function HeroSection() {
               Hi, I am Huynh, <br /> Creative Technologies
             </Typography>
             <Typography mb={5}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, similique. Sint
+              Lorem test ipsum dolor sit amet consectetur adipisicing elit. Soluta, similique. Sint
               obcaecati in eveniet possimus sunt id totam laudantium est iste accusamus quae
               corporis cumque, necessitatibus molestias impedit quaerat maxime!
             </Typography>
