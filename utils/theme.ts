@@ -21,8 +21,8 @@ export let theme = createTheme({
       main: red.A400,
     },
     text: {
-      primary: '#21243D'
-    }
+      primary: '#21243D',
+    },
   },
   typography: {
     fontFamily: heebo.style.fontFamily,
@@ -71,15 +71,27 @@ export let theme = createTheme({
         },
       ],
     },
+    MuiChip: {
+      styleOverrides: {
+        root: {
+          paddingInline: 2,
+        },
+      },
+      variants: [
+        {
+          props: { color: 'secondary' },
+          style: {
+            backgroundColor: '#142850',
+            color: 'white',
+            fontWeight: 'bold',
+            fontSize: '16px',
+          },
+        },
+      ],
+    },
   },
 })
 
-theme = responsiveFontSizes(theme);
-// theme.typography.h3 = {
-//   fontSize: '2rem',
-//   [theme.breakpoints.up('md')]: {
-//     fontSize: '3rem'
-//   }
-// }
+theme = responsiveFontSizes(theme)
 
 export default theme
