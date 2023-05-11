@@ -26,7 +26,6 @@ export let theme = createTheme({
   },
   typography: {
     fontFamily: heebo.style.fontFamily,
-    // fontFamily: 'Heebo, sans-serif',
   },
   components: {
     MuiContainer: {
