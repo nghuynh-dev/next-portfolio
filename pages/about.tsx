@@ -1,8 +1,7 @@
 import { MainLayout } from '@/components/layout'
-import * as React from 'react'
 import { Box, Typography } from '@mui/material'
 
-export interface AboutPageProps {}
+export interface AboutPageProps { }
 
 export default function AboutPage(props: AboutPageProps) {
   return (

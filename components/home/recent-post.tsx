@@ -8,6 +8,7 @@ export function RecentPosts() {
   const postList: Post[] = [
     {
       id: '1',
+      slug: '',
       title: 'Create local environment by Docker',
       publishedDate: '1683367217954',
       tagList: ['Backend', 'DevOps'],
@@ -15,6 +16,7 @@ export function RecentPosts() {
     },
     {
       id: '2',
+      slug: '',
       title: 'Awareness on CI/CD flows and concepts',
       publishedDate: '1683367217954',
       tagList: ['Backend', 'DevOps'],

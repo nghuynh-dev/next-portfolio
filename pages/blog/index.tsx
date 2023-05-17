@@ -1,16 +1,18 @@
-import { MainLayout } from '@/components/layout'
-import { getPostList } from '@/utils/post'
-import { GetStaticProps } from 'next'
+import { MainLayout } from '@/components/layout';
+import { getPostList } from '@/utils/post';
+import { GetStaticProps } from 'next';
 
 export interface BlogListPageProps {
   blogs: any[]
 }
 
 export default function BlogListPage({ blogs }: BlogListPageProps) {
+  console.log(blogs);
+
   return <div>
     <h1>Blog list</h1>
     <ul>
-      {/* {blogs.map(blog => <li key={blog.id}>{blog.title}</li>)} */}
+      {blogs.map(blog => <li key={blog.id}>{blog.title}</li>)}
     </ul>
   </div>
 }
@@ -18,20 +20,11 @@ export default function BlogListPage({ blogs }: BlogListPageProps) {
 BlogListPage.Layout = MainLayout
 
 export const getStaticProps: GetStaticProps<BlogListPageProps> = async () => {
-  // const res = await fetch('https://jsonplaceholder.typicode.com/posts')
-  // const data = await res.json()
-
-  const data = await getPostList()
+  const postList = await getPostList()
 
   return {
     props: {
-      blogs: data
+      blogs: postList
     }
-    // {
-    //   blogs: data.map((x: any) => ({
-    //     id: x.id,
-    //     title: x.title,
-    //   }))
-    // }
   }
 }
