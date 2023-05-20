@@ -3,16 +3,16 @@ import { getPostList } from '@/utils/post';
 import { GetStaticProps } from 'next';
 
 export interface BlogListPageProps {
-  blogs: any[]
+  posts: any[]
 }
 
-export default function BlogListPage({ blogs }: BlogListPageProps) {
-  console.log(blogs);
+export default function BlogListPage({ posts }: BlogListPageProps) {
+  console.log(posts);
 
   return <div>
     <h1>Blog list</h1>
     <ul>
-      {blogs.map(blog => <li key={blog.id}>{blog.title}</li>)}
+      {posts && posts.map(blog => <li key={blog.id}>{blog.title}</li>)}
     </ul>
   </div>
 }
@@ -24,7 +24,7 @@ export const getStaticProps: GetStaticProps<BlogListPageProps> = async () => {
 
   return {
     props: {
-      blogs: postList
+      posts: postList
     }
   }
 }
