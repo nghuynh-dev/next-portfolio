@@ -10,7 +10,7 @@ export function RecentPosts() {
       id: '1',
       slug: '',
       title: 'Create local environment by Docker',
-      publishedDate: '1683367217954',
+      publishedDate: '2022-06-18T12:00:00Z',
       tagList: ['Backend', 'DevOps'],
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quibusdam voluptate libero? Ut officia accusamus itaque eaque voluptate dolorem dolorum, aut rerum ea adipisci, dolore, ipsum doloribus voluptas deserunt velit.'
     },
@@ -18,7 +18,7 @@ export function RecentPosts() {
       id: '2',
       slug: '',
       title: 'Awareness on CI/CD flows and concepts',
-      publishedDate: '1683367217954',
+      publishedDate: '2022-06-18T12:00:00Z',
       tagList: ['Backend', 'DevOps'],
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quibusdam voluptate libero? Ut officia accusamus itaque eaque voluptate dolorem dolorum, aut rerum ea adipisci, dolore, ipsum doloribus voluptas deserunt velit.'
     }
